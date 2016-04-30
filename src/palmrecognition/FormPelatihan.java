@@ -62,33 +62,33 @@ public class FormPelatihan extends javax.swing.JFrame {
         jPanel4 = new javax.swing.JPanel();
         jTabbedPane1 = new javax.swing.JTabbedPane();
         jPanel1 = new javax.swing.JPanel();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
+        trainBtn = new javax.swing.JButton();
+        trainingAddImageBtn = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
         listNama = new javax.swing.JList<>();
         jScrollPane2 = new javax.swing.JScrollPane();
         listImage = new javax.swing.JList<>();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
+        trainingPersonNameLbl = new javax.swing.JLabel();
+        trainingPalmImageLbl = new javax.swing.JLabel();
         imageDisplay = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
-        jButton3 = new javax.swing.JButton();
-        jLabel3 = new javax.swing.JLabel();
+        testAddTrainingTemplateBtn = new javax.swing.JButton();
+        testTemplateLbl = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
+        testImageLbl = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
-        jButton4 = new javax.swing.JButton();
-        jPanel3 = new javax.swing.JPanel();
-        jLabel7 = new javax.swing.JLabel();
+        testAddImageBtn = new javax.swing.JButton();
+        testImagePanel = new javax.swing.JPanel();
+        testImageProcessingLbl = new javax.swing.JLabel();
         labelImageOriginal = new javax.swing.JLabel();
         labelImageGrayscale = new javax.swing.JLabel();
         labelImageNormalization = new javax.swing.JLabel();
         labelImageEdgeDetector = new javax.swing.JLabel();
         labelImageBinerization = new javax.swing.JLabel();
-        jButton5 = new javax.swing.JButton();
+        testBtn = new javax.swing.JButton();
         labelTemplate = new javax.swing.JLabel();
         labelImageTest = new javax.swing.JLabel();
-        jLabel8 = new javax.swing.JLabel();
+        testpalmOwnerLbl = new javax.swing.JLabel();
         labelPalmOwner = new javax.swing.JLabel();
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
@@ -104,17 +104,17 @@ public class FormPelatihan extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jButton1.setText("Train");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        trainBtn.setText("Train");
+        trainBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                trainBtnActionPerformed(evt);
             }
         });
 
-        jButton2.setText("Add Image");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        trainingAddImageBtn.setText("Add Image");
+        trainingAddImageBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                trainingAddImageBtnActionPerformed(evt);
             }
         });
 
@@ -134,11 +134,11 @@ public class FormPelatihan extends javax.swing.JFrame {
         });
         jScrollPane2.setViewportView(listImage);
 
-        jLabel1.setText("Person Name :");
+        trainingPersonNameLbl.setText("Person Name :");
 
-        jLabel2.setText("Palm Image :");
+        trainingPalmImageLbl.setText("Palm Image :");
 
-        imageDisplay.setText("jLabel3");
+        imageDisplay.setText("-");
         imageDisplay.setPreferredSize(new java.awt.Dimension(200, 200));
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
@@ -147,19 +147,19 @@ public class FormPelatihan extends javax.swing.JFrame {
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jButton2)
+                .addComponent(trainingAddImageBtn)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButton1)
+                .addComponent(trainBtn)
                 .addGap(26, 26, 26))
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(39, 39, 39)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(jLabel2)
+                        .addComponent(trainingPalmImageLbl)
                         .addGap(0, 711, Short.MAX_VALUE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jLabel1)
+                            .addComponent(trainingPersonNameLbl)
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                                 .addComponent(jScrollPane2)
                                 .addGap(39, 39, 39)
@@ -172,14 +172,14 @@ public class FormPelatihan extends javax.swing.JFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap(105, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton2)
-                    .addComponent(jButton1))
+                    .addComponent(trainingAddImageBtn)
+                    .addComponent(trainBtn))
                 .addGap(1, 1, 1)
-                .addComponent(jLabel1)
+                .addComponent(trainingPersonNameLbl)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 143, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(23, 23, 23)
-                .addComponent(jLabel2)
+                .addComponent(trainingPalmImageLbl)
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(imageDisplay, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -189,32 +189,32 @@ public class FormPelatihan extends javax.swing.JFrame {
 
         jTabbedPane1.addTab("Training Image", jPanel1);
 
-        jButton3.setText("Choose Training Template");
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
+        testAddTrainingTemplateBtn.setText("Choose Training Template");
+        testAddTrainingTemplateBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
+                testAddTrainingTemplateBtnActionPerformed(evt);
             }
         });
 
-        jLabel3.setText("Template : ");
+        testTemplateLbl.setText("Template : ");
 
         jLabel4.setForeground(new java.awt.Color(255, 102, 51));
 
-        jLabel5.setText("Image : ");
+        testImageLbl.setText("Image : ");
 
         jLabel6.setForeground(new java.awt.Color(51, 204, 0));
 
-        jButton4.setText("Choose Image");
-        jButton4.addActionListener(new java.awt.event.ActionListener() {
+        testAddImageBtn.setText("Choose Image");
+        testAddImageBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton4ActionPerformed(evt);
+                testAddImageBtnActionPerformed(evt);
             }
         });
 
-        jPanel3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        jPanel3.setPreferredSize(new java.awt.Dimension(400, 400));
+        testImagePanel.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        testImagePanel.setPreferredSize(new java.awt.Dimension(400, 400));
 
-        jLabel7.setText("Image Processing :");
+        testImageProcessingLbl.setText("Image Processing :");
 
         labelImageOriginal.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         labelImageOriginal.setText("Original");
@@ -236,15 +236,15 @@ public class FormPelatihan extends javax.swing.JFrame {
         labelImageBinerization.setText("Binerization");
         labelImageBinerization.setToolTipText("");
 
-        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
-        jPanel3.setLayout(jPanel3Layout);
-        jPanel3Layout.setHorizontalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel3Layout.createSequentialGroup()
+        javax.swing.GroupLayout testImagePanelLayout = new javax.swing.GroupLayout(testImagePanel);
+        testImagePanel.setLayout(testImagePanelLayout);
+        testImagePanelLayout.setHorizontalGroup(
+            testImagePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(testImagePanelLayout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel7)
-                    .addGroup(jPanel3Layout.createSequentialGroup()
+                .addGroup(testImagePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(testImageProcessingLbl)
+                    .addGroup(testImagePanelLayout.createSequentialGroup()
                         .addComponent(labelImageOriginal)
                         .addGap(18, 18, 18)
                         .addComponent(labelImageGrayscale)
@@ -256,13 +256,13 @@ public class FormPelatihan extends javax.swing.JFrame {
                         .addComponent(labelImageBinerization)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
-        jPanel3Layout.setVerticalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel3Layout.createSequentialGroup()
+        testImagePanelLayout.setVerticalGroup(
+            testImagePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(testImagePanelLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel7)
+                .addComponent(testImageProcessingLbl)
                 .addGap(33, 33, 33)
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGroup(testImagePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(labelImageOriginal)
                     .addComponent(labelImageGrayscale)
                     .addComponent(labelImageNormalization)
@@ -271,10 +271,10 @@ public class FormPelatihan extends javax.swing.JFrame {
                 .addContainerGap(159, Short.MAX_VALUE))
         );
 
-        jButton5.setText("Test Image");
-        jButton5.addActionListener(new java.awt.event.ActionListener() {
+        testBtn.setText("Test Image");
+        testBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton5ActionPerformed(evt);
+                testBtnActionPerformed(evt);
             }
         });
 
@@ -282,7 +282,7 @@ public class FormPelatihan extends javax.swing.JFrame {
 
         labelImageTest.setText("-");
 
-        jLabel8.setText("Palm Owner :  ");
+        testpalmOwnerLbl.setText("Palm Owner :  ");
 
         labelPalmOwner.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         labelPalmOwner.setText("-");
@@ -294,8 +294,8 @@ public class FormPelatihan extends javax.swing.JFrame {
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGap(38, 38, 38)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jLabel5)
-                    .addComponent(jLabel3))
+                    .addComponent(testImageLbl)
+                    .addComponent(testTemplateLbl))
                 .addGap(10, 10, 10)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel2Layout.createSequentialGroup()
@@ -309,19 +309,19 @@ public class FormPelatihan extends javax.swing.JFrame {
                     .addComponent(jLabel6))
                 .addGap(320, 320, 320)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jButton3)
-                    .addComponent(jButton4))
+                    .addComponent(testAddTrainingTemplateBtn)
+                    .addComponent(testAddImageBtn))
                 .addGap(25, 25, 25))
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, 792, Short.MAX_VALUE)
+                    .addComponent(testImagePanel, javax.swing.GroupLayout.DEFAULT_SIZE, 792, Short.MAX_VALUE)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                        .addComponent(jLabel8)
+                        .addComponent(testpalmOwnerLbl)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(labelPalmOwner, javax.swing.GroupLayout.PREFERRED_SIZE, 138, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 153, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(testBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 153, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap())
         );
         jPanel2Layout.setVerticalGroup(
@@ -329,23 +329,23 @@ public class FormPelatihan extends javax.swing.JFrame {
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGap(28, 28, 28)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jButton3)
+                    .addComponent(testAddTrainingTemplateBtn)
                     .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(jLabel3)
+                        .addComponent(testTemplateLbl)
                         .addComponent(jLabel4)
                         .addComponent(labelTemplate, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel5)
+                    .addComponent(testImageLbl)
                     .addComponent(jLabel6)
-                    .addComponent(jButton4)
+                    .addComponent(testAddImageBtn)
                     .addComponent(labelImageTest))
                 .addGap(18, 18, 18)
-                .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, 233, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(testImagePanel, javax.swing.GroupLayout.PREFERRED_SIZE, 233, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(103, 103, 103)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel8)
+                    .addComponent(testBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(testpalmOwnerLbl)
                     .addComponent(labelPalmOwner, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(26, 26, 26))
         );
@@ -357,7 +357,7 @@ public class FormPelatihan extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    private void trainingAddImageBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_trainingAddImageBtnActionPerformed
         // TODO add your handling code here:
         
         String nama;
@@ -388,7 +388,7 @@ public class FormPelatihan extends javax.swing.JFrame {
             }
         }
        
-    }//GEN-LAST:event_jButton2ActionPerformed
+    }//GEN-LAST:event_trainingAddImageBtnActionPerformed
 
     private void listNamaValueChanged(javax.swing.event.ListSelectionEvent evt) {//GEN-FIRST:event_listNamaValueChanged
         // TODO add your handling code here:
@@ -416,7 +416,7 @@ public class FormPelatihan extends javax.swing.JFrame {
     /* 
         Action for processing training image
     */
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void trainBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_trainBtnActionPerformed
         // TODO add your handling code here:
         try{
             String fileName;
@@ -429,9 +429,9 @@ public class FormPelatihan extends javax.swing.JFrame {
         }catch(Exception e){
             System.out.println(e.getMessage());
         }
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_trainBtnActionPerformed
 
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+    private void testAddTrainingTemplateBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_testAddTrainingTemplateBtnActionPerformed
         // TODO add your handling code here:
         JFileChooser chooser = new JFileChooser();
             chooser.setFileSelectionMode(JFileChooser.FILES_ONLY);
@@ -446,9 +446,9 @@ public class FormPelatihan extends javax.swing.JFrame {
                 //set label text
                 labelTemplate.setText(trainingTemplateFile.getName());
             }
-    }//GEN-LAST:event_jButton3ActionPerformed
+    }//GEN-LAST:event_testAddTrainingTemplateBtnActionPerformed
 
-    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+    private void testAddImageBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_testAddImageBtnActionPerformed
         // TODO add your handling code here:
         JFileChooser chooser = new JFileChooser();
             chooser.setFileSelectionMode(JFileChooser.FILES_ONLY);
@@ -464,9 +464,9 @@ public class FormPelatihan extends javax.swing.JFrame {
                 labelImageTest.setText(imageTest.getName());
                 displayProcessingImage(imageTest);
             }
-    }//GEN-LAST:event_jButton4ActionPerformed
+    }//GEN-LAST:event_testAddImageBtnActionPerformed
 
-    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+    private void testBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_testBtnActionPerformed
         // TODO add your handling code here:
        if(imageTest != null && trainingTemplateFile != null){
             try{
@@ -478,7 +478,7 @@ public class FormPelatihan extends javax.swing.JFrame {
                 System.out.println(e.getMessage());
             }  
        }
-    }//GEN-LAST:event_jButton5ActionPerformed
+    }//GEN-LAST:event_testBtnActionPerformed
     
     // updating jlist nama from person list
     private void updateNameList(){
@@ -574,22 +574,10 @@ public class FormPelatihan extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel imageDisplay;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
-    private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
@@ -604,6 +592,18 @@ public class FormPelatihan extends javax.swing.JFrame {
     private javax.swing.JLabel labelTemplate;
     private javax.swing.JList<String> listImage;
     private javax.swing.JList<String> listNama;
+    private javax.swing.JButton testAddImageBtn;
+    private javax.swing.JButton testAddTrainingTemplateBtn;
+    private javax.swing.JButton testBtn;
+    private javax.swing.JLabel testImageLbl;
+    private javax.swing.JPanel testImagePanel;
+    private javax.swing.JLabel testImageProcessingLbl;
+    private javax.swing.JLabel testTemplateLbl;
+    private javax.swing.JLabel testpalmOwnerLbl;
+    private javax.swing.JButton trainBtn;
+    private javax.swing.JButton trainingAddImageBtn;
+    private javax.swing.JLabel trainingPalmImageLbl;
+    private javax.swing.JLabel trainingPersonNameLbl;
     // End of variables declaration//GEN-END:variables
    
     
